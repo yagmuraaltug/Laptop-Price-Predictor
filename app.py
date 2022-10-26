@@ -55,7 +55,7 @@ if st.button('Pridect Price'):
     X_resolution = resolution.split('x')[0]
     Y_resolution = resolution.split('x')[1]
 
-    ppi = ((X_resolution ** 2) + (Y_resolution ** 2)) ** 0.5 / (screen_size)
+    ppi = ((X_resolution**2)+(Y_resolution**2))**0.5/(screen_size)
 
     query = np.array([company, type, ram, weight,
                       touchscreen, ips, ppi, cpu, hdd, ssd, gpu, os])
