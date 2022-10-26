@@ -52,8 +52,8 @@ if st.button('Pridect Price'):
     else:
         ips= 0
     
-    X_resolution = resolution.split('x')[0]
-    Y_resolution = resolution.split('x')[1]
+    X_resolution = int(resolution.split('x')[0])
+    Y_resolution = int(resolution.split('x')[1])
 
     ppi = ((X_resolution**2)+(Y_resolution**2))**0.5/(screen_size)
 
