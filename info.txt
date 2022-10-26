@@ -1,0 +1,15 @@
+df.select_dtypes(include=['object']).columns   # object can be 'int32', 'int64', 'float32', 'float64'
+DataFrame unique columns : df[col].unique()
+
+df['Ram'] = df['Ram'].str.replace('GB','')
+
+df['Weight'] = df['Weight'].astype('float64') change type
+
+sn.displot(df['Price'], color='red') : fiyatin dagilmalarini gosteriyor
+
+df['TouchScreen'] = df['ScreenResolution'].apply(lambda element:1 if 'Touchscreen' in element else 0) eger Screenresolution icinde touchscreen var ise 1 yoksa 0
+
+df['CPU_Name'] = df['Cpu'].apply(lambda text:' '.join(text.split()[:3]))
+
+df['first'] = df['first'].str.replace(r'\D','') #removed all characters.
+
